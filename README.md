@@ -1,3 +1,36 @@
+
+
+## Problem definition file
+[Blog.docx](https://github.com/AIA2105/ITI_social_app/files/7187596/Blog.docx)
+
+Project Scenario:
+
+•	User will register/login to the blog.
+
+•	User will select a post to read and may write a comment.
+
+•	User may write a new Post.
+
+•	Post has many comments and an area that allow users to write their comments.
+
+•	User may go to his profile page to delete/update his account.
+
+Project Web Pages:
+1.	Home page(All Posts)
+2.	Post Page, contains (Post title, Post body, all comments for this post and a text area for new comment).
+3.	Registration Page
+4.	Login Page
+5.	User Profile Page
+6.	Add New Post
+
+ 
+
+
+## Database diagram
+![BlogERD ](https://user-images.githubusercontent.com/43480708/133834446-b1772d31-0f77-4424-b1e9-9a207851001b.jpg)
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
