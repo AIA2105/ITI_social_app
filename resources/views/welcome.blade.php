@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -78,7 +79,7 @@
                     @endauth
                 </div>
             @endif
-
+			
             <div class="content">
                 <div class="title m-b-md">
                     ITI Social App

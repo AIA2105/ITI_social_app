@@ -38,8 +38,8 @@
 				}else{
 					
 					$output= " ✅ Changed Successfully\n";
-					
-					header("Location: http://127.0.0.1:8000/allPosts"); 
+					$Message = urlencode(" 🟢  Data Updated Successfully\n ");
+					header("Location: http://127.0.0.1:8000/allPosts?Message=$Message"); 
 					exit();		
 				}
 
@@ -48,6 +48,24 @@
 			
 		}else{
 			$output= " ⛔ password is not correct\n";
+		}
+				
+	}
+	
+	
+		if(isset($_POST['update_password'])){
+		
+		if (Hash::check($_POST['current_password'], Auth::user()->password )) {
+			$output3= " ✅ password is correct\n";
+			$Message = urlencode(" 🟢  Password Updated Successfully\n ");
+			header("Location: http://127.0.0.1:8000/allPosts?Message=$Message"); 
+			exit();	
+			
+
+	
+			
+		}else{
+			$output3= " ⛔ password is not correct\n";
 		}
 				
 	}
@@ -65,7 +83,6 @@
 				userController::destroy(Auth::user());
 					
 					$output3= " ✅ Deleted Successfully\n";
-					
 					header("Location: http://127.0.0.1:8000/"); 
 					exit();		
 
@@ -190,9 +207,10 @@
                 <div class="card-header">Change Password</div>
    
                 <div class="card-body">
-                    <form method="POST" action="{{ route('change.password') }}">
+                    <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
                         @csrf 
-   
+   						@method('GET')
+
   
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">Current Password</label>
@@ -220,7 +238,7 @@
    
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" name="update_password">
                                     Update Password
                                 </button>
 								@foreach ($errors->all() as $error)
