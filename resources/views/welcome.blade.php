@@ -84,10 +84,10 @@
                 <div class="title m-b-md">
                     ITI Social App
                 </div>
-
+				<div class="links"> --------------------------------- BY --------------------------------- </div><br>
                 <div class="links">
-                    <a href="https://wa.me/+201142463152">Ahmed Al-Mahallawey</a>
-                    <a href="https://wa.me/+201009590118">Rasha Zaki</a>
+                    <a href="https://wa.me/+201142463152">📱 Ahmed Al-Mahallawey</a>
+                    <a href="https://wa.me/+201009590118">📱 Rashad Zaki Al-Sakni</a>
                 </div>
             </div>
         </div>
