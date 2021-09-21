@@ -1,3 +1,9 @@
+## Project demo
+https://www.linkedin.com/posts/aia2105_html-css-javascript-activity-6845844836340252673-sss6
+
+
+https://user-images.githubusercontent.com/43480708/134086759-ead02b4b-0d0e-4820-a703-89b511f23546.mp4
+
 
 
 ## Problem definition file
@@ -16,6 +22,10 @@ Project Scenario:
 •	User may go to his profile page to delete/update his account.
 
 Project Web Pages:
+
+Uploading Ahmed Al-Mahallawey.mp4…
+
+
 1.	Home page(All Posts)
 2.	Post Page, contains (Post title, Post body, all comments for this post and a text area for new comment).
 3.	Registration Page
