@@ -5,12 +5,12 @@
 					   $user_id = Auth::id();
 					   $title = $body = ""; 
 					   $output="";
-					   $dbhost = "ec2-34-232-191-133.compute-1.amazonaws.com";
-					   $dbuser = "besvekgvaehjaj";
-					   $dbpass = "35a15620aecbcaad712ffd5906954fd1ac9c7e6da8e27e6c8207033b0c368750";
-					   $dbname="d43ar5b60lb38l";
-						$conn = pg_connect(getenv("DATABASE_URL"));
-					
+					   $dbhost = "localhost";
+						$dbuser = "root";
+						$dbpass = "123";
+						$dbname="social_app";
+						$conn = mysqli_connect($dbhost, $dbuser, $dbpass , $dbname);
+										
 						if(isset($_POST['addPost'])){
 							if(!empty($_POST['title']) && !empty($_POST['body'])){
 								$title= $_POST['title'];
