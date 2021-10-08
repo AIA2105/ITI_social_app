@@ -16,13 +16,13 @@
 								$title= $_POST['title'];
 								$body= $_POST['body'];
 								if(! $conn ) {
-									$output= 'Could not connect: ' . mysqli_error();
+									$output= 'Could not connect: ' . pg_last_error();
 								}else{
 									$output ="Connection Success!";
 									$sql = "INSERT INTO posts (title ,body, users_id, created_at) VALUES ('$title','$body','$user_id', CURRENT_TIMESTAMP);";
-									$retval = mysqli_query($conn, $sql);
+									$retval = pg_query($conn, $sql);
 									if(! $retval ) {
-										$output= ' ⛔ Could not enter data: ' . mysqli_error($conn);
+										$output= ' ⛔ Could not enter data: ' . pg_last_error($conn);
 									}else{
 										
 										$output= " ✅ Post added successfully\n";
