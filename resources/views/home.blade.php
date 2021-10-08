@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 <?php
-header("Location: http://127.0.0.1:8000/allPosts"); 
+header("Location: ../allPosts"); 
 exit();
 ?>
 

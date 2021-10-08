@@ -39,7 +39,7 @@
 					
 					$output= " ✅ Changed Successfully\n";
 					$Message = urlencode(" 🟢  Data Updated Successfully\n ");
-					header("Location: http://127.0.0.1:8000/allPosts?Message=$Message"); 
+					header("Location: ../allPosts?Message=$Message"); 
 					exit();		
 				}
 
@@ -58,7 +58,7 @@
 		if (Hash::check($_POST['current_password'], Auth::user()->password )) {
 			$output3= " ✅ password is correct\n";
 			$Message = urlencode(" 🟢  Password Updated Successfully\n ");
-			header("Location: http://127.0.0.1:8000/allPosts?Message=$Message"); 
+			header("Location: ../allPosts?Message=$Message"); 
 			exit();	
 			
 
@@ -83,7 +83,7 @@
 				userController::destroy(Auth::user());
 					
 					$output3= " ✅ Deleted Successfully\n";
-					header("Location: http://127.0.0.1:8000/"); 
+					header("Location: ../"); 
 					exit();		
 
 

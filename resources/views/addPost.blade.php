@@ -27,7 +27,7 @@
 										
 										$output= " ✅ Post added successfully\n";
 										$Message = urlencode(" 🟢  Posted Successfully\n ");
-										header("Location: http://127.0.0.1:8000/allPosts?Message=$Message"); 
+										header("Location: ../allPosts?Message=$Message"); 
 										exit();	
 									}
 							

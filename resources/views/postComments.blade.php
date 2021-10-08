@@ -29,7 +29,7 @@ if(isset($_POST['addComment'])){
 			}else{
 				
 				$output= " ✅ Comment added successfully\n";
-				header("Location: http://127.0.0.1:8000/postComments/$post_id"); 
+				header("Location: ../postComments/$post_id"); 
 				exit();
 				
 			}
